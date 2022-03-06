@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --font-black: #000000;
+  --font-white: #ffffff;
+  --font-gold: #bdae82;
+}
+
+html {
+  scroll-behavior: smooth; 
+}
+
+body {
+  min-width: 320px;
+  background-color: var(--font-black);
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 2;
+  color: var(--font-white)
+}
+
+.header {  
+  width: 100%;
+/*  background-color: var(--font-black);*/
+  margin: 0 auto;
+}
+
+.flex-header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: calc(100% - 40px);
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 5px 20px;
+/*  padding: 0 20px;
+  background-color: var(--font-black);*/
+
+}
+
+.bird-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.bird-logo path {
+  fill: var(--font-gold);
+}
+
+.bird-logo svg:hover path{
+  fill: var(--font-white);
+}
+
+.nav {
+  margin-left: auto;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;  
+  list-style: none;
+}
+
+.nav-item {
+  padding: 0 20px;
+  color: var(--font-white);
+  font-size: 20px;
+  line-height: 50px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.nav-item:last-child {
+  padding: 0 0 0 20px;
+}
+
+.nav-item:hover {
+  color: var(--font-gold);
+}
+
+.download {
+  margin: auto 0 auto 30px;
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+}
+/*
+.download: hover {
+  title: 'download';
+}
+*/
+.download path {
+  fill: var(--font-white);
+}
+
+.download svg:hover path {
+  fill: var(--font-gold);
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 120px);
+  min-height: 280px;
+  background: url("./assets/img/forest.jpg") 0 0/cover no-repeat;
+}
+
+.solovey {
+  background: url("./assets/img/solovey.jpg") 0 0/cover no-repeat;
+}
+
+.drozd {
+  background: url("./assets/img/drozd.jpg") 0 0/cover no-repeat;
+}
+
+.zarynka {
+  background: url("./assets/img/zarynka.jpg") 0 0/cover no-repeat;
+}
+
+.javoronok {
+  background: url("./assets/img/javoronok.jpg") 0 0/cover no-repeat;
+}
+
+.slavka {
+  background: url("./assets/img/slavka.jpg") 0 0/cover no-repeat;
+}
+
+.play {
+  width: 160px;
+  height: 160px;
+  background: url("./assets/svg/play.svg") 0 0/contain no-repeat;
+  background-color: transparent;
+  border: 0;  
+  transition: .3s;
+  cursor: pointer;
+}
+
+.pause {
+  background: url("./assets/svg/pause.svg") 0 0/contain no-repeat;
+}
+
+.play:hover {
+  filter: brightness(.8);
+}
+
+.flex-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: calc(100% - 40px);
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 5px 20px;
+  font-size: 20px;
+}
+
+.flex-copyright {
+  display: flex;
+  align-items: center;
+}
+
+.copyright {
+  padding-right: 20px;
+}
+
+.gitmumca {
+  color: var(--font-white);
+  text-decoration: none;
+  padding: 0 20px;
+  transition: .3s;
+}
+
+.gitmumca:hover {
+  color: var(--font-gold);
+}
+
+.rss-logo {
+  width: 135px;
+  height: 50px;
+}
+
+.rss-logo path {
+  fill: var(--font-white);
+}
+
+.rss-logo svg:hover path {
+  fill: var(--font-gold);
+}
