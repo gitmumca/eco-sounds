@@ -96,9 +96,10 @@ body {
 }
 
 .download {
-  margin: auto 0 auto 30px;
   background-color: transparent;
   border-color: transparent;
+
+  margin: auto 0 auto 30px;
   cursor: pointer;
 }
 /*
@@ -306,6 +307,6 @@ body {
   }
   .menu-nav {
     visibility: visible;
-    margin: 0 64px 0 8px;    
+    margin: 0 90px 0 8px;    
   }
 }

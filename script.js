@@ -73,6 +73,19 @@ items.forEach(el => el.addEventListener('click', function() {
 		playAudio(thisId);		
 	}))
 
+	const menuItems = document.querySelectorAll('.menu-item');
+
+	menuItems.forEach(el => el.addEventListener('click', function() {
+		var mainClass = document.querySelector('.main'); 
+		birds.forEach(el => mainClass.classList.remove(el));
+		document.querySelectorAll('.menu-item').forEach(el => el.style.color = 'var(--font-white)');
+		thisId = this.getAttribute('id');
+		curBird = thisId;
+		this.style.color = 'var(--font-gold)';
+		mainClass.classList.add(thisId);
+		playAudio(thisId);		
+	}))
+
 // кнопка download
 
 	document.querySelector('.download').addEventListener('click', function() {
